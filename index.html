@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/assets/images/favicon.ico" type="image/x-icon">
+  <title>Seletor de Vídeos</title>
+  <link rel="stylesheet" href="src/css/modern-normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="src/assets/images/logo.svg" alt="Video Seletor Logo" class="logo-img"
+          srcset="src/assets/images/logo.svg 1x, src/assets/images/logo@2x.svg 2x">
+      </a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Tutorials</a></li>
+          <li><a href="#" class="nav-link">Webinars</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="filter-container">
+      <div class="filter-wrapper">
+        <label>Filter by duration:</label>
+        <div id="custom-select-container"></div>
+      </div>
+      <div class="order-wrapper">
+        <label>Sort by duration:</label>
+        <div id="custom-sort-container"></div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div id="video-list" class="video-grid"></div>
+    </div>
+  </main>
+
+  <a href="#" id="goToTopBtn" class="go-to-top-btn" title="Go back to the top">
+    <img src="src/assets/images/chevron-up.png" alt="Go back to the top">
+  </a>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
